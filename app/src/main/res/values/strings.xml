@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">荣耀条形码</string>
+    <string name="app_version">版本号：1.1910.8.4</string>
+    <string name="txt_bc_area">采集区域</string>
+    <string name="txt_bc_room">设备位置</string>
+    <string name="txt_bc_code">设备编号</string>
+    <string name="txt_bc_opera">操作</string>
+    <string name="txt_opera_scan">扫码</string>
+    <string name="txt_opera_delete">删除</string>
+    <string name="txt_title_capturelist">数据采集列表</string>
+</resources>

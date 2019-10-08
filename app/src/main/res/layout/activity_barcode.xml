@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/CFFF"
+    tools:context=".BarCodeActivity">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tbBCA_Toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme"
+        android:background="@drawable/bg_shape_maintoolbar"></android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/lblBCA_Area"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="点击编辑地址"
+        android:textColor="@color/Black"
+        android:background="@color/Gainsboro"
+        android:gravity="center"
+        android:textSize="16dp"></TextView>
+
+    <include layout="@layout/listheader_barcodelist"></include>
+
+    <TextView
+        android:id="@+id/lblBCA_NoData"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:background="@color/CFFF"
+        android:gravity="center"
+        android:text="没有设备地址信息！请点击“新增项”" />
+    <ListView
+        android:id="@+id/lvBCA_List"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></ListView>
+</LinearLayout>

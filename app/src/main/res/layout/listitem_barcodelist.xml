@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/C6AC"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/txtliBCL_RoomName"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_margin="1dp"
+        android:background="@color/White"
+        android:gravity="center"
+        android:text="设备位置"
+        android:layout_weight="1"
+        android:textColor="@color/Black"
+        android:textSize="16dp"></TextView>
+
+    <LinearLayout
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:background="@color/White"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="35dp"
+                android:layout_height="wrap_content"
+                android:text="表："></TextView>
+
+            <TextView
+                android:id="@+id/txtliBCL_MeterCode"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:background="@android:drawable/edit_text"
+                android:gravity="center"
+                android:text="设备编码"
+                android:textColor="@color/Black"
+                android:textSize="16dp"></TextView>
+
+            <Button
+                android:id="@+id/btnliBCL_Meter"
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:text="扫码"></Button>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="35dp"
+                android:layout_height="wrap_content"
+                android:text="阀："></TextView>
+
+            <TextView
+                android:id="@+id/txtliBCL_ValveCode"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:background="@android:drawable/edit_text"
+                android:gravity="center"
+                android:text="设备编码"
+                android:textColor="@color/Black"
+                android:textSize="16dp"></TextView>
+
+            <Button
+                android:id="@+id/btnliBCL_Valve"
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:text="扫码"></Button>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="55dp"
+        android:layout_height="match_parent"
+        android:layout_margin="1dp"
+        android:background="@color/CFFF"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnliBCL_Delete"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:text="删除"
+            android:textColor="@color/Red"></Button>
+    </LinearLayout>
+</LinearLayout>

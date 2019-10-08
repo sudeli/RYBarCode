@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/CFFF"
+    tools:context=".SimpleCaptureActivity">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tbSCA_Toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme"
+        android:background="@drawable/bg_shape_maintoolbar"></android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/lblSCA_ScannedValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="未开始扫描"
+        android:gravity="center"
+        android:textSize="50dp"
+        android:layout_weight="1"></TextView>
+
+    <Button
+        android:id="@+id/btnSCA_Scan"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="点击开始扫描条形码"></Button>
+</LinearLayout>

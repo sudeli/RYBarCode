@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/CFFF"
+    tools:context=".ScanActivity">
+    <TextView
+        android:id="@+id/lblScan_RoomName"
+        android:layout_width="match_parent"
+        android:textSize="20dp"
+        android:textColor="@color/Black"
+        android:background="@drawable/bg_shape_listtitle"
+        android:gravity="center"
+        android:text="门牌号"
+        android:layout_height="50dp">
+    </TextView>
+    <TextView
+        android:id="@+id/lblScan_Address"
+        android:layout_width="match_parent"
+        android:background="@drawable/bg_shape_listtitle"
+        android:gravity="center"
+        android:text="某某某某小区-某某楼栋-某某单元"
+        android:layout_height="wrap_content">
+    </TextView>
+    <TextView
+        android:layout_width="match_parent"
+        android:background="@color/C6AC"
+        android:layout_height="1dp">
+    </TextView>
+
+    <com.journeyapps.barcodescanner.DecoratedBarcodeView
+        android:id="@+id/dbv_custom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="50dp"
+        app:zxing_preview_scaling_strategy="fitXY" />
+</LinearLayout>
