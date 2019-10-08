@@ -207,7 +207,6 @@ public class BarCodeActivity extends AppCompatActivity {
             if (!file.exists()) {
                 file.createNewFile();
             }
-            //boolean isWrite = file.canWrite();
             workbook = Workbook.createWorkbook(file);
             WritableSheet sheet = workbook.createSheet("Sheet1", 0);
             //创建标题栏
